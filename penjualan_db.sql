@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 100130
 File Encoding         : 65001
 
-Date: 2019-10-01 00:21:00
+Date: 2019-10-01 18:44:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -113,7 +113,7 @@ CREATE TABLE `helm` (
   `harga` int(20) NOT NULL DEFAULT '0',
   `stok` int(8) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of helm
@@ -140,17 +140,18 @@ CREATE TABLE `user` (
   `password` varchar(255) NOT NULL,
   `role` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('1', 'ismail', 'mail', '123456', 'Administator');
-INSERT INTO `user` VALUES ('2', 'coba', 'coba', '1234', 'produksi');
+INSERT INTO `user` VALUES ('2', 'coba', 'coba', '1234', 'Produksi');
 INSERT INTO `user` VALUES ('5', 'admin', 'admin', '1234', 'Administator');
-INSERT INTO `user` VALUES ('8', 'coba', 'admincoba', '1234', 'produksi');
-INSERT INTO `user` VALUES ('9', 'Nama', 'nama', '1234', 'produksi');
-INSERT INTO `user` VALUES ('10', 'burhan', 'burhan', '123456', 'produksi');
-INSERT INTO `user` VALUES ('11', 'tes', 'testing', '123456', 'staff');
-INSERT INTO `user` VALUES ('12', 'Nayla', 'produksi', 'produksi', 'produksi');
-INSERT INTO `user` VALUES ('13', 'Nafi', 'staff', 'staff', 'staff');
+INSERT INTO `user` VALUES ('8', 'coba', 'admincoba', '1234', 'Produksi');
+INSERT INTO `user` VALUES ('9', 'Nama', 'nama', '1234', 'Produksi');
+INSERT INTO `user` VALUES ('10', 'burhan', 'burhan', '123456', 'Produksi');
+INSERT INTO `user` VALUES ('11', 'tes', 'testing', '123456', 'Staff');
+INSERT INTO `user` VALUES ('12', 'Nayla', 'produksi', 'produksi', 'Produksi');
+INSERT INTO `user` VALUES ('13', 'Nafi', 'staff', 'staff', 'Staff');
+INSERT INTO `user` VALUES ('15', 'baru', 'baru', '1234', 'Produksi');
